@@ -32,10 +32,23 @@ const btnGoCheckout = document.getElementById('btn-go-checkout');
 
 // Navigation
 const views = document.querySelectorAll('.view-section');
+const navItems = document.querySelectorAll('.nav-item');
+
 window.switchView = (id) => {
     views.forEach(v => v.classList.remove('active'));
     document.getElementById(id).classList.add('active');
     document.body.classList.remove('cart-open');
+    
+    // Update active nav styling
+    navItems.forEach(n => n.classList.remove('active-nav'));
+    const mapping = {
+        'section-home': 'btn-home',
+        'section-catalog': 'btn-shop',
+        'section-about': 'btn-about',
+        'section-contact': 'btn-contact'
+    };
+    if(mapping[id]) document.getElementById(mapping[id])?.classList.add('active-nav');
+
     if(id === 'section-checkout') renderCheckout();
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
@@ -43,8 +56,15 @@ window.switchView = (id) => {
 document.getElementById('btn-home').addEventListener('click', () => switchView('section-home'));
 document.getElementById('btn-shop').addEventListener('click', () => switchView('section-catalog'));
 document.getElementById('btn-about').addEventListener('click', () => switchView('section-about'));
+document.getElementById('btn-contact').addEventListener('click', () => switchView('section-contact'));
 document.getElementById('nav-logo').addEventListener('click', () => switchView('section-home'));
 btnGoCheckout.addEventListener('click', () => switchView('section-checkout'));
+
+document.getElementById('contact-form')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    showToast('¡Mensaje enviado con éxito! Te contactaremos pronto.', true);
+    e.target.reset();
+});
 
 // Render Products
 function getProductHTML(p) {

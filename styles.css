@@ -1,15 +1,15 @@
 /* Custom CSS with variables based on Logo */
 :root {
-  --bg-primary: #FAF8F3;
+  --bg-primary: #F6F4EB; /* Crema suave */
   --bg-secondary: #FFFFFF;
-  --cloud-pink: #F0A7A3;
-  --cloud-pink-hover: #e89591;
-  --coffee-light: #C9A380;
-  --coffee-dark: #8E6D53;
-  --text-dark: #1C1917;
-  --text-light: #FAF8F3;
+  --cloud-pink: #4A6741; /* Verde botella / Sostenible (Mantiene la variable original) */
+  --cloud-pink-hover: #364B30;
+  --coffee-light: #A37F61; /* Café capuchino */
+  --coffee-dark: #4A3022; /* Café tostado intenso */
+  --text-dark: #2C3333;
+  --text-light: #F6F4EB;
   --error: #ff4d4f;
-  --success: #52c41a;
+  --success: #4A6741;
   
   --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
   --shadow-md: 0 8px 24px rgba(0,0,0,0.06);
@@ -54,13 +54,16 @@ body {
 .logo-text h1 { font-size: 20px; font-weight: 700; line-height: 1; margin: 0;}
 .logo-text span { font-size: 10px; font-weight: 600; letter-spacing: 1px; color: var(--coffee-light); display: block;}
 
-.nav-links { display: flex; gap: 20px; }
+.nav-links { display: flex; gap: 35px; }
 .nav-item {
   background: none; border: none;
-  font-family: 'Outfit'; font-size: 16px; font-weight: 500;
-  color: var(--text-dark); cursor: pointer; transition: color 0.3s;
+  font-family: 'Outfit'; font-size: 17px; font-weight: 600;
+  color: var(--text-dark); cursor: pointer; transition: 0.3s;
+  position: relative; padding: 8px 4px;
 }
-.nav-item:hover { color: var(--cloud-pink); }
+.nav-item::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 3px; background: var(--cloud-pink); transition: 0.3s; border-radius: 2px;}
+.nav-item:hover::after, .nav-item.active-nav::after { width: 100%; }
+.nav-item:hover, .nav-item.active-nav { color: var(--cloud-pink); text-shadow: 0 0 10px rgba(240, 167, 163, 0.4); }
 
 .nav-actions { display: flex; gap: 12px; }
 .icon-btn {
@@ -154,6 +157,26 @@ main { margin-top: 70px; padding: 20px; }
 .value-card i { font-size: 56px; margin-bottom: 20px; display: inline-block; margin-top: -30px; background: #fff; border-radius: 50%; padding: 12px; box-shadow: var(--shadow-md); position: relative; z-index: 5; }
 .value-card h4 { font-size: 22px; margin-bottom: 12px; color: var(--text-dark); font-weight: 600; }
 .value-card p { font-size: 15px; color: #666; line-height: 1.6; margin: 0; }
+
+/* How it works */
+.steps-container { display: flex; gap: 30px; justify-content: center; margin-top: 40px; flex-wrap: wrap; }
+.step-card { flex: 1; min-width: 250px; background: var(--bg-secondary); padding: 30px; border-radius: 20px; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid rgba(0,0,0,0.02); transition: 0.3s; }
+.step-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+.step-number { width: 60px; height: 60px; background: var(--cloud-pink); color: #fff; font-size: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; box-shadow: 0 4px 15px rgba(74, 103, 65, 0.4); }
+.step-card h4 { color: var(--coffee-dark); margin-bottom: 12px; font-size: 20px; font-weight: 600; }
+.step-card p { color: #555; font-size: 15px; line-height: 1.6; }
+
+/* Contact Section */
+.contact-wrapper { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 60px; margin-top: 40px; background: #fff; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-md); border: 1px solid rgba(0,0,0,0.02); }
+@media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; gap: 40px; padding: 20px; } }
+.contact-info h3 { font-size: 26px; color: var(--coffee-dark); margin-bottom: 24px; font-weight: 700; }
+.contact-info p { font-size: 16px; color: #555; display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.contact-info p i { font-size: 24px; color: var(--cloud-pink); }
+.social-links { display: flex; gap: 16px; margin-top: 32px; }
+.social-links i { font-size: 36px; color: var(--coffee-light); cursor: pointer; transition: 0.3s; }
+.social-links i:hover { color: var(--cloud-pink); transform: translateY(-4px); }
+.styled-form textarea:focus { border-color: var(--cloud-pink); }
 
 /* Sidebar Cart */
 .cart-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.3); opacity: 0; pointer-events: none; transition: 0.3s; z-index: 2000; }

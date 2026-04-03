@@ -23,8 +23,9 @@
             </div>
             <div class="nav-links">
                 <button class="nav-item" id="btn-home">Inicio</button>
-                <button class="nav-item" id="btn-shop">Tienda</button>
-                <button class="nav-item" id="btn-about">Nosotros</button>
+                <button class="nav-item" id="btn-shop">Catálogo</button>
+                <button class="nav-item" id="btn-about">Sostenibilidad</button>
+                <button class="nav-item" id="btn-contact">Contacto</button>
             </div>
             <div class="nav-actions">
                 <button class="icon-btn" id="btn-login-open" title="Iniciar Sesión">
@@ -58,6 +59,28 @@
                     <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Latte Art" class="hero-floating-img">
                 </div>
             </div>
+
+            <!-- Como funciona (Ejemplo de pedido) -->
+            <div class="how-it-works" style="max-width: 1200px; margin: 80px auto; padding: 0 20px;">
+                <h2 class="section-title text-center">Así Funciona Tu Pedido</h2>
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number"><i class="ph-fill ph-bag"></i></div>
+                        <h4>1. Arma tu Carrito</h4>
+                        <p>Navega el catálogo y selecciona tus postres y bebidas favoritas.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number"><i class="ph-fill ph-map-pin"></i></div>
+                        <h4>2. Dinos Dónde Estás</h4>
+                        <p>Ingresa tu pabellón en la UNAN para asegurarnos de entregarlo a tiempo.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number"><i class="ph-fill ph-check-circle"></i></div>
+                        <h4>3. Recibe y Disfruta</h4>
+                        <p>Tu orden llega lista y fresca en nuestros empaques 100% biodegradables.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- CATALOG SECTION -->
@@ -88,6 +111,11 @@
                         <h3>El Motivo detrás de Cloud Coffe</h3>
                         <p>Cloud Coffe nació de una fuerte convicción: disfrutar de una bebida extraordinaria no tiene por qué costarle caro a nuestro planeta. Queríamos crear un refugio en la universidad que no solo ofrezca calidad indiscutible, sino que esté verdaderamente respaldado por un ecosistema ecológico.</p>
                         <p>Apostamos por la <strong>tecnología verde</strong> en cada etapa de nuestro emprendimiento. Desde procesos de molienda optimizados con energías limpias hasta sistemas digitales para eliminar el papel, nuestra arquitectura reduce la huella de carbono. Cuidamos el mundo para seguir disfrutando de lo mejor que nos da.</p>
+                        
+                        <div class="vision-box" style="margin-top: 24px; padding: 20px; background: var(--bg-secondary); border-left: 4px solid var(--cloud-pink); border-radius: 8px; box-shadow: var(--shadow-sm);">
+                            <h4 style="color: var(--coffee-dark); margin-bottom: 8px; font-size: 18px;">Nuestra Visión</h4>
+                            <p style="font-size: 15px; margin: 0; line-height: 1.5; color: #555;">Ser la cafetería universitaria de referencia en prácticas ecológicas, demostrando que la innovación y la tecnología verde conviven en perfecta armonía con el mejor café.</p>
+                        </div>
                     </div>
                     <div class="about-image-mosaic">
                         <img src="https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Recolección de café justo" class="mosaic-img-1">
@@ -120,6 +148,48 @@
                             <h4>Comercio Justo</h4>
                             <p>Un trato directo y ético que dignifica la labor de los pequeños caficultores.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="section-contact" class="view-section">
+            <div class="contact-wrapper">
+                <div class="about-hero">
+                    <h2 class="section-title text-center">Contáctanos</h2>
+                    <p class="about-subtitle text-center" style="margin-bottom: 20px;">Estamos aquí para escucharte y prepararte el mejor café.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>¿Dónde Nos Encontramos?</h3>
+                        <p><i class="ph-fill ph-map-pin"></i> UNAN-Managua, Recinto Universitario Rubén Darío</p>
+                        <p><i class="ph-fill ph-envelope-simple"></i> hola@cloudcoffe.local</p>
+                        <p><i class="ph-fill ph-phone"></i> +505 1234 5678</p>
+                        <div class="social-links">
+                            <i class="ph-fill ph-instagram-logo"></i>
+                            <i class="ph-fill ph-facebook-logo"></i>
+                            <i class="ph-fill ph-whatsapp-logo"></i>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="styled-form">
+                            <div class="input-group">
+                                <label>Nombre Completo</label>
+                                <input type="text" placeholder="Ej. Ana Pérez" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Correo Electrónico</label>
+                                <input type="email" placeholder="tucorreo@ejemplo.com" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Mensaje</label>
+                                <textarea rows="4" placeholder="¿En qué te podemos ayudar?" required style="width: 100%; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; padding: 12px 16px; font-family: inherit; font-size: 15px; outline: none;"></textarea>
+                            </div>
+                            <button type="submit" class="primary-btn pulse-glow" style="width: 100%; margin-top: 10px;">Enviar Mensaje</button>
+                        </form>
                     </div>
                 </div>
             </div>
