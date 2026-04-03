@@ -6,15 +6,15 @@ const products = [
     { id: 4, category: 'bebidas', name: "Kit Degustación Pequeño", description: "Perfecto para probar nuestra selección especial.", price: 100.00, image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
     { id: 5, category: 'postres', name: "Surtido de Reposterías", description: "Dulces clásicos horneados diariamente para acompañar tu café.", price: 60.00, image: "https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
     { id: 6, category: 'postres', name: "Galletas de Avena", description: "Crujientes, caseras y llenas de fibra. Receta tradicional.", price: 65.00, image: "./img/galletas-de-avena-1536x1152.webp" },
-    { id: 7, category: 'postres', name: "Galletas de Avena con Pasas", description: "El toque dulce de las pasas en nuestra clásica galleta de avena.", price: 75.00, image: "https://images.unsplash.com/photo-1606554522436-1e646276b5d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
+    { id: 7, category: 'postres', name: "Galletas de Avena con Pasas", description: "El toque dulce de las pasas en nuestra clásica galleta de avena.", price: 75.00, image: "./img/Captura%20de%20pantalla%202026-03-30%20162743.png" },
     { id: 8, category: 'postres', name: "Brownies de Chocolate", description: "Esponjosos por dentro, crujientes por fuera. Irresistibles.", price: 90.00, image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
     { id: 9, category: 'postres', name: "Sándwich Fresco", description: "Perfecto para un almuerzo ligero, natural y lleno de energía.", price: 150.00, image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-    { id: 10, category: 'postres', name: "Pastel de Zanahoria", description: "Con suave cubierta de queso crema y un toque de canela espectacular.", price: 120.00, image: "./img/zanahoria.jpg" },
+    { id: 10, category: 'postres', name: "Pastel de Zanahoria", description: "Con suave cubierta de queso crema y un toque de canela espectacular.", price: 120.00, image: "./img/Captura%20de%20pantalla%202026-03-30%20162042.png" },
     { id: 11, category: 'postres', name: "Pastel de Chocolate", description: "Triple chocolate, húmedo y decorado artesanalmente para endulzar el día.", price: 130.00, image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
     { id: 12, category: 'postres', name: "Pastel de Nueces", description: "Una mezcla perfecta de masa suave y nueces tostadas.", price: 125.00, image: "https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-    { id: 13, category: 'postres', name: "Pastel de Tres Leches", description: "El clásico latino, dulce, húmedo y bañado en deliciosa crema.", price: 140.00, image: "./img/tres-leches.jpg" },
-    { id: 14, category: 'postres', name: "Pan de Maíz", description: "Esponjoso pan de maíz al estilo casero, dorado a la perfección.", price: 80.00, image: "./img/maiz.jpg" },
-    { id: 15, category: 'postres', name: "Patty Costeño", description: "Empanada tradicional con masa dorada, crujiente y relleno exquisito.", price: 90.00, image: "./img/patty.jpg" }
+    { id: 13, category: 'postres', name: "Pastel de Tres Leches", description: "El clásico latino, dulce, húmedo y bañado en deliciosa crema.", price: 140.00, image: "./img/Captura%20de%20pantalla%202026-03-30%20162158.png" },
+    { id: 14, category: 'postres', name: "Pan de Maíz", description: "Esponjoso pan de maíz al estilo casero, dorado a la perfección.", price: 80.00, image: "./img/Captura%20de%20pantalla%202026-03-30%20162434.png" },
+    { id: 15, category: 'postres', name: "Patty Costeño", description: "Empanada tradicional con masa dorada, crujiente y relleno exquisito.", price: 90.00, image: "./img/Captura%20de%20pantalla%202026-03-30%20162536.png" }
 ];
 
 // State
